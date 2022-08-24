@@ -4,13 +4,23 @@
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+
+from tkinter import *
+from tkinter import ttk
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+main = Tk()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main.geometry("500x500")
+
+main.title("Scratchpad")
+
+txt = Text(main,width=50,height=20)
+txt.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+main.mainloop()
+
+
+
+
+
